@@ -27,6 +27,12 @@
     <ClCompile Include="Camera.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="shader\basicShader.vs" />
@@ -37,6 +43,8 @@
     <None Include="shader\spotLightShader.fs" />
     <None Include="shader\mixLightShader.vs" />
     <None Include="shader\mixLightShader.fs" />
+    <None Include="shader\modelLoad.vs" />
+    <None Include="shader\modelLoad.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -46,6 +54,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
