@@ -130,6 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Dependency\glad\src\glad.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Shader.cpp" />
@@ -137,8 +138,15 @@
   <ItemGroup>
     <None Include="shader\basicShader.fs" />
     <None Include="shader\basicShader.vs" />
+    <None Include="shader\lightShader.fs" />
+    <None Include="shader\lightShader.vs" />
+    <None Include="shader\mixLightShader.fs" />
+    <None Include="shader\mixLightShader.vs" />
+    <None Include="shader\spotLightShader.fs" />
+    <None Include="shader\spotLightShader.vs" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="stb_image.h" />
   </ItemGroup>

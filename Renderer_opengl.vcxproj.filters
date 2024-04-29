@@ -24,16 +24,28 @@
     <ClCompile Include="Shader.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="shader\basicShader.vs" />
     <None Include="shader\basicShader.fs" />
+    <None Include="shader\lightShader.fs" />
+    <None Include="shader\lightShader.vs" />
+    <None Include="shader\spotLightShader.vs" />
+    <None Include="shader\spotLightShader.fs" />
+    <None Include="shader\mixLightShader.vs" />
+    <None Include="shader\mixLightShader.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
