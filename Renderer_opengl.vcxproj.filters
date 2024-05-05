@@ -45,6 +45,8 @@
     <None Include="shader\mixLightShader.fs" />
     <None Include="shader\modelLoad.vs" />
     <None Include="shader\modelLoad.fs" />
+    <None Include="shader\testShader.vs" />
+    <None Include="shader\testShader.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
