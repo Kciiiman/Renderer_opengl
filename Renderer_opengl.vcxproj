@@ -146,6 +146,8 @@
     <None Include="shader\mixLightShader.vs" />
     <None Include="shader\modelLoad.fs" />
     <None Include="shader\modelLoad.vs" />
+    <None Include="shader\shaderSingleColor.fs" />
+    <None Include="shader\shaderSingleColor.vs" />
     <None Include="shader\spotLightShader.fs" />
     <None Include="shader\spotLightShader.vs" />
     <None Include="shader\testShader.fs" />

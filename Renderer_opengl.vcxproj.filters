@@ -47,6 +47,8 @@
     <None Include="shader\modelLoad.fs" />
     <None Include="shader\testShader.vs" />
     <None Include="shader\testShader.fs" />
+    <None Include="shader\shaderSingleColor.vs" />
+    <None Include="shader\shaderSingleColor.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
