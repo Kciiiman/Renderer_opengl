@@ -140,6 +140,8 @@
   <ItemGroup>
     <None Include="shader\basicShader.fs" />
     <None Include="shader\basicShader.vs" />
+    <None Include="shader\fboTest.fs" />
+    <None Include="shader\fboTest.vs" />
     <None Include="shader\lightShader.fs" />
     <None Include="shader\lightShader.vs" />
     <None Include="shader\mixLightShader.fs" />
