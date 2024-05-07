@@ -59,7 +59,7 @@ int main() {
 
     glEnable(GL_DEPTH_TEST);
 
-    Shader shader("shader/testShader.vs", "shader/testShader.fs");
+    Shader shader("shader/gsShader/gsShader.vs", "shader/gsShader/gsShader.fs", "shader/gsShader/gsShader.gs");
     Shader screenShader("shader/fboTest.vs", "shader/fboTest.fs");
     Shader skyboxShader("shader/skybox.vs", "shader/skybox.fs");
 
@@ -212,7 +212,7 @@ int main() {
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
 
         shader.use();
-        shader.setVec3("cameraPos", camera.Position);
+        shader.setFloat("time", static_cast<float>(glfwGetTime()));
         shader.setMat4("view", view);
         shader.setMat4("projection", projection);
 

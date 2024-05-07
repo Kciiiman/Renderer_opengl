@@ -142,6 +142,9 @@
     <None Include="shader\basicShader.vs" />
     <None Include="shader\fboTest.fs" />
     <None Include="shader\fboTest.vs" />
+    <None Include="shader\gsShader\gsShader.fs" />
+    <None Include="shader\gsShader\gsShader.gs" />
+    <None Include="shader\gsShader\gsShader.vs" />
     <None Include="shader\lightShader.fs" />
     <None Include="shader\lightShader.vs" />
     <None Include="shader\mixLightShader.fs" />
@@ -155,6 +158,7 @@
     <None Include="shader\spotLightShader.fs" />
     <None Include="shader\spotLightShader.vs" />
     <None Include="shader\testShader.fs" />
+    <None Include="shader\testShader.gs" />
     <None Include="shader\testShader.vs" />
   </ItemGroup>
   <ItemGroup>

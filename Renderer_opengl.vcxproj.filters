@@ -53,6 +53,10 @@
     <None Include="shader\fboTest.fs" />
     <None Include="shader\skybox.vs" />
     <None Include="shader\skybox.fs" />
+    <None Include="shader\testShader.gs" />
+    <None Include="shader\gsShader\gsShader.vs" />
+    <None Include="shader\gsShader\gsShader.fs" />
+    <None Include="shader\gsShader\gsShader.gs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
