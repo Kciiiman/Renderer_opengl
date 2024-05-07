@@ -150,6 +150,8 @@
     <None Include="shader\modelLoad.vs" />
     <None Include="shader\shaderSingleColor.fs" />
     <None Include="shader\shaderSingleColor.vs" />
+    <None Include="shader\skybox.fs" />
+    <None Include="shader\skybox.vs" />
     <None Include="shader\spotLightShader.fs" />
     <None Include="shader\spotLightShader.vs" />
     <None Include="shader\testShader.fs" />

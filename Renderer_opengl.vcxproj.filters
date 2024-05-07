@@ -51,6 +51,8 @@
     <None Include="shader\shaderSingleColor.fs" />
     <None Include="shader\fboTest.vs" />
     <None Include="shader\fboTest.fs" />
+    <None Include="shader\skybox.vs" />
+    <None Include="shader\skybox.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
