@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Dependency\glad\src\glad.c" />
+    <ClCompile Include="Utils.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Model.cpp" />
@@ -142,6 +143,10 @@
     <None Include="shader\advanceLight\advanceLight.vs" />
     <None Include="shader\basicShader.fs" />
     <None Include="shader\basicShader.vs" />
+    <None Include="shader\depthTest\debugQuad.fs" />
+    <None Include="shader\depthTest\debugQuad.vs" />
+    <None Include="shader\depthTest\simpleDepthShader.fs" />
+    <None Include="shader\depthTest\simpleDepthShader.vs" />
     <None Include="shader\fboTest.fs" />
     <None Include="shader\fboTest.vs" />
     <None Include="shader\gsShader\gsShader.fs" />
@@ -155,6 +160,12 @@
     <None Include="shader\modelLoad.vs" />
     <None Include="shader\shaderSingleColor.fs" />
     <None Include="shader\shaderSingleColor.vs" />
+    <None Include="shader\shadowMap\debug_quad.fs" />
+    <None Include="shader\shadowMap\debug_quad.vs" />
+    <None Include="shader\shadowMap\shadow_map.fs" />
+    <None Include="shader\shadowMap\shadow_map.vs" />
+    <None Include="shader\shadowMap\shadow_map_depth.fs" />
+    <None Include="shader\shadowMap\shadow_map_depth.vs" />
     <None Include="shader\skybox.fs" />
     <None Include="shader\skybox.vs" />
     <None Include="shader\spotLightShader.fs" />
@@ -165,6 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="Utils.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="Shader.h" />
