@@ -57,6 +57,8 @@
     <None Include="shader\gsShader\gsShader.vs" />
     <None Include="shader\gsShader\gsShader.fs" />
     <None Include="shader\gsShader\gsShader.gs" />
+    <None Include="shader\advanceLight\advanceLight.vs" />
+    <None Include="shader\advanceLight\advanceLight.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">

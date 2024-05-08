@@ -138,6 +138,8 @@
     <ClCompile Include="Shader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="shader\advanceLight\advanceLight.fs" />
+    <None Include="shader\advanceLight\advanceLight.vs" />
     <None Include="shader\basicShader.fs" />
     <None Include="shader\basicShader.vs" />
     <None Include="shader\fboTest.fs" />
