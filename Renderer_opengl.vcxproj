@@ -160,6 +160,8 @@
     <None Include="shader\modelLoad.vs" />
     <None Include="shader\normalMap\normalMap.fs" />
     <None Include="shader\normalMap\normalMap.vs" />
+    <None Include="shader\parallaxMap\parallaxMap.fs" />
+    <None Include="shader\parallaxMap\parallaxMap.vs" />
     <None Include="shader\pointShadow\pointShadow.fs" />
     <None Include="shader\pointShadow\pointShadow.vs" />
     <None Include="shader\pointShadow\pointShadow_depth.fs" />

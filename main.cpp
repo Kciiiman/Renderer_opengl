@@ -20,6 +20,8 @@ void renderScene(const Shader& shader);
 int SCR_WIDTH = 800;
 int SCR_HEIGHT = 600;
 
+float heightScale = 0.1f;
+
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 bool firstMouse = true;
 float lastX = SCR_WIDTH / 2.0f;
@@ -61,12 +63,14 @@ int main() {
     Shader shader("shader/normalMap/normalMap.vs", "shader/normalMap/normalMap.fs");  
 
     //load texture
-    unsigned int brickTexture = loadTexture("images/brickwall.jpg");
-    unsigned int brick_nTexture = loadTexture("images/brickwall_normal.jpg");
+    unsigned int diffuse = loadTexture("images/wood/wood.png");
+    unsigned int normal = loadTexture("images/wood/toy_box_normal.png");
+    unsigned int parallax = loadTexture("images/wood/toy_box_disp.png");
 
     shader.use();
     shader.setInt("diffuseMap", 0);
     shader.setInt("normalMap", 1);
+    shader.setInt("depthMap", 2);
 
     while (!glfwWindowShouldClose(window)) {
         float currentFrame = static_cast<float>(glfwGetTime());
@@ -85,14 +89,18 @@ int main() {
         shader.setMat4("view", view);
         // render normal-mapped quad
         glm::mat4 model = glm::mat4(1.0f);
-        model = glm::rotate(model, glm::radians((float)glfwGetTime() * -10.0f), glm::normalize(glm::vec3(1.0, 0.0, 1.0)));
+        model = glm::rotate(model, glm::radians((float)glfwGetTime() * -10.0f), glm::normalize(glm::vec3(1.0, 0.0, 1.0))); // rotate the quad to show parallax mapping from multiple directions
         shader.setMat4("model", model);
         shader.setVec3("viewPos", camera.Position);
         shader.setVec3("lightPos", lightPos);
+        shader.setFloat("heightScale", heightScale); // adjust with Q and E keys
+        std::cout << heightScale << std::endl;
         glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, brickTexture);
+        glBindTexture(GL_TEXTURE_2D, diffuse);
         glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, brick_nTexture);
+        glBindTexture(GL_TEXTURE_2D, normal);
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, parallax);
         renderQuad();
 
         // render light source (simply re-renders a smaller plane at the light's position for debugging/visualization)
@@ -127,6 +135,21 @@ void processInput(GLFWwindow* window)
         camera.ProcessKeyboard(LEFT, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
         camera.ProcessKeyboard(RIGHT, deltaTime);
+
+    if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
+    {
+        if (heightScale > 0.0f)
+            heightScale -= 0.0005f;
+        else
+            heightScale = 0.0f;
+    }
+    else if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)
+    {
+        if (heightScale < 1.0f)
+            heightScale += 0.0005f;
+        else
+            heightScale = 1.0f;
+    }
 }
 
 void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
