@@ -77,6 +77,8 @@
     <None Include="shader\pointShadow\pointShadow_depth.vs" />
     <None Include="shader\pointShadow\pointShadow_depth.fs" />
     <None Include="shader\pointShadow\pointShadow_depth.gs" />
+    <None Include="shader\normalMap\normalMap.vs" />
+    <None Include="shader\normalMap\normalMap.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
