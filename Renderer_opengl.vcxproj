@@ -158,6 +158,11 @@
     <None Include="shader\mixLightShader.vs" />
     <None Include="shader\modelLoad.fs" />
     <None Include="shader\modelLoad.vs" />
+    <None Include="shader\pointShadow\pointShadow.fs" />
+    <None Include="shader\pointShadow\pointShadow.vs" />
+    <None Include="shader\pointShadow\pointShadow_depth.fs" />
+    <None Include="shader\pointShadow\pointShadow_depth.gs" />
+    <None Include="shader\pointShadow\pointShadow_depth.vs" />
     <None Include="shader\shaderSingleColor.fs" />
     <None Include="shader\shaderSingleColor.vs" />
     <None Include="shader\shadowMap\debug_quad.fs" />

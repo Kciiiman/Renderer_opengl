@@ -72,6 +72,11 @@
     <None Include="shader\shadowMap\shadow_map_depth.fs" />
     <None Include="shader\shadowMap\debug_quad.vs" />
     <None Include="shader\shadowMap\debug_quad.fs" />
+    <None Include="shader\pointShadow\pointShadow.vs" />
+    <None Include="shader\pointShadow\pointShadow.fs" />
+    <None Include="shader\pointShadow\pointShadow_depth.vs" />
+    <None Include="shader\pointShadow\pointShadow_depth.fs" />
+    <None Include="shader\pointShadow\pointShadow_depth.gs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
