@@ -81,6 +81,12 @@
     <None Include="shader\normalMap\normalMap.fs" />
     <None Include="shader\parallaxMap\parallaxMap.vs" />
     <None Include="shader\parallaxMap\parallaxMap.fs" />
+    <None Include="shader\gBuffer\gbuffer.vs" />
+    <None Include="shader\gBuffer\gbuffer.fs" />
+    <None Include="shader\gBuffer\defferedshading.vs" />
+    <None Include="shader\gBuffer\defferedshading.fs" />
+    <None Include="shader\gBuffer\defferedlightbox.vs" />
+    <None Include="shader\gBuffer\defferedlightbox.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">

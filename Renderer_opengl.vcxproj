@@ -149,6 +149,12 @@
     <None Include="shader\depthTest\simpleDepthShader.vs" />
     <None Include="shader\fboTest.fs" />
     <None Include="shader\fboTest.vs" />
+    <None Include="shader\gBuffer\defferedlightbox.fs" />
+    <None Include="shader\gBuffer\defferedlightbox.vs" />
+    <None Include="shader\gBuffer\defferedshading.fs" />
+    <None Include="shader\gBuffer\defferedshading.vs" />
+    <None Include="shader\gBuffer\gbuffer.fs" />
+    <None Include="shader\gBuffer\gbuffer.vs" />
     <None Include="shader\gsShader\gsShader.fs" />
     <None Include="shader\gsShader\gsShader.gs" />
     <None Include="shader\gsShader\gsShader.vs" />
