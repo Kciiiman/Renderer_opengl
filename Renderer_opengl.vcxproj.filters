@@ -87,6 +87,8 @@
     <None Include="shader\gBuffer\defferedshading.fs" />
     <None Include="shader\gBuffer\defferedlightbox.vs" />
     <None Include="shader\gBuffer\defferedlightbox.fs" />
+    <None Include="shader\pbrShader\pbr.vs" />
+    <None Include="shader\pbrShader\pbr.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">

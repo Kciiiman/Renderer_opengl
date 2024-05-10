@@ -7,3 +7,5 @@ unsigned int loadCubemap(std::vector<std::string> faces);
 void renderCube();
 void renderQuad();
 void renderQuad2();
+
+void renderSphere();
